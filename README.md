@@ -25,7 +25,9 @@ See the README script for more information on testing and customizing your imple
 
 - FileMaker 13 or higher, Pro or Server
 - [bBox plug-in](http://www.beezwax.net/bbox) (Free)
-- Mac OS client or server only. (bBox is only compatible with OS X. If you can find a plug-in to execute Python scripts, you might be able to make it work.)
+- macOS
+
+bBox is only compatible with OS X. If you can find a plug-in to execute Python scripts, you might be able to make it work.
 
 ## Installation
 
