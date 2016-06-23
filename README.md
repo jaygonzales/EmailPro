@@ -23,6 +23,7 @@ See the README script for more information on testing and customizing your imple
 
 ## Requirements
 
+- FileMaker 13 or higher, Pro or Server
 - [bBox plug-in](http://www.beezwax.net/bbox) (Free)
 - Mac OS client or server only. (bBox is only compatible with OS X. If you can find a plug-in to execute Python scripts, you might be able to make it work.)
 
@@ -32,9 +33,9 @@ Just find a place to store the plug-in file in your solution, import the module 
 
 ## Download and Installation
 
-There should be a "Download ZIP" button on the [GitHub page](https://github.com/DonovanChan/EmailPro). Press that and open the EmailPro.fmp12 file. Its README script contains installation instructions.
+Use the "Clone or download" button on the [GitHub page](https://github.com/beezwax/EmailPro), then "Download ZIP". In the resulting EmailPro folder,  open the EmailPro.fmp12 file. Its README script contains installation instructions.
 
 ## Contact
 
-Beezwax
+Beezwax Datatools, Inc.
 info@beezwax.net
