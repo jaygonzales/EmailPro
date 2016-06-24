@@ -28,12 +28,12 @@ HISTORY:
 	2013-12-16 17:42 PST - Donovan Chandler : (3.2.3) strip trailing delimiters
 	2013-12-20 21:01 PST - Donovan Chandler : (3.3.0) include plain text alternative; add hostname parameter; use TLS by default for authentication; don't prefix errors
 	2014-01-16 13:34 PST - Donovan Chandler : (3.4.0) support extended ascii characters
-	2014-08-13 11:30 PDT - Donovan Chandler : (3.5.0) no longer split on commas (allowing for commas in file names)
-
+	2014-08-13 11:30 PDT - Donovan Chandler : (3.5.0) no longer split on commas
+	(allowing for commas in file names)
+	2016-06-22 12:00 PST - Simon Brown : (3.5.0) removed shebang line (not needed)
+	2016-06-23 12:00 PST - Simon Brown : (3.5.0) after starttls should do ehlo again
 __________________________________________________ */
 
-"#!/usr/bin/python" & ¶ &
-"" & ¶ &
 "\"\"\"Email.py: Sends text or HTML emails with optional attachments.\"\"\"" & ¶ &
 "\"\"\"Intended for use with bBox plug-in, hence the odd variable declarations\"\"\"" & ¶ &
 "" & ¶ &
@@ -66,7 +66,7 @@ __________________________________________________ */
 "        Create a new empty email message object." & ¶ &
 "" & ¶ &
 "        @param smtpServer: The address of the SMTP server" & ¶ &
-"        @param smtpPort: Optional. Defaults to 25. Common ports include 25, 587." & ¶ &
+"        @param smtpPort: Optional. Defaults to 25. Common ports include 25, 465, 587." & ¶ &
 "        @param username: Optional." & ¶ &
 "        @param password: Optional." & ¶ &
 "        @param debugLevel: Optional. 0 for less info; 1 for more info (may cause some messages to fail compared to 0)" & ¶ &
@@ -175,6 +175,7 @@ __________________________________________________ */
 "            if self._username:" & ¶ &
 "                if server.has_extn('STARTTLS'):" & ¶ &
 "                    server.starttls()" & ¶ &
+"                    server.ehlo()" & ¶ &
 "                else:" & ¶ &
 "                    server.quit()" & ¶ &
 "                    server = smtplib.SMTP_SSL(self._smtpServer, self._smtpPort, self._hostname)" & ¶ &
