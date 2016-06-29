@@ -33,6 +33,8 @@ bBox is only compatible with OS X. If you can find a plug-in to execute Python s
 
 Just find a place to store the plug-in file in your solution, import the module scripts, and customize the Configuration and Settings scripts.
 
+If you will be using gmail for sending messages, be sure to review [Allow less secure apps to access accounts](https://support.google.com/a/answer/6260879). This is required due to the inability to use Google's two-step verification for sender.
+
 ## Download and Installation
 
 Use the "Clone or download" button on the [GitHub page](https://github.com/beezwax/EmailPro), then "Download ZIP". In the resulting EmailPro folder,  open the EmailPro.fmp12 file. Its README script contains installation instructions.
