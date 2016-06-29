@@ -1,3 +1,9 @@
+1.7.0 / 2016-06-23
+==================
+- Fixed:  fixed SSL/TLS negotiation, improving gmail.com compatibility
+- Changed: now require FileMaker 13 or higher, bBox 0.83 or higher
+- Changed: Python script is now stored in a text field for easier editing.
+
 1.6.0 / 2014-08-26
 ==================
 - Improved:  configure plug-in installation easier
