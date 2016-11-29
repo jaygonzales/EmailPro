@@ -41,5 +41,5 @@ Use the "Clone or download" button on the [GitHub page](https://github.com/beezw
 
 ## Contact
 
-Beezwax Datatools, Inc.
+Beezwax
 info@beezwax.net
